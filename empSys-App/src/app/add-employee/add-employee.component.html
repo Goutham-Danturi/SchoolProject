@@ -1,0 +1,27 @@
+<div >
+<h3>Add Employee</h3> 
+<br>
+Name
+<input type="text" [(ngModel)]="emp.EName"  >
+<br>
+ DOB
+<input type="date" [(ngModel)]="emp.EDOB" >
+<br>
+ DOJ
+<input type="date" [(ngModel)]="emp.EDOJ" >
+<br>
+ Adress
+<input type="text" [(ngModel)]="emp.EAdress" >
+<br>
+
+{{loading}}
+<input type="button" value="Fetch" (click) ="Fetch()"  >
+
+
+<input type="button" value="Save" (click) ="SaveToDB()"  >
+
+<input type="button" value="Clear"  (click)="ClearClick()" >
+<br>
+
+
+</div>
